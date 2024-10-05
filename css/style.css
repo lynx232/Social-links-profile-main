@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+:root {
+    --BG-COLOR: hsl(0, 0%, 8%);
+    --CARD-COLOR: hsl(0, 0%, 12%);
+    --LINK-COLOR: hsl(0, 0%, 20%);
+    --TEXT-COLOR: hsl(0, 0%, 100%);
+    --ALTERNATE-COLOR: hsl(75, 94%, 57%);
+}
+
+body {
+    background-color: var(--BG-COLOR);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: var(--CARD-COLOR);
+    border-radius: 10px;
+    min-width: 320px;
+    padding: 1.3rem;
+    margin-bottom: 2em;
+    
+}
+
+.card__profile__pic {
+    width: 5.5em;
+    margin-bottom: 1em;
+    border-radius: 50%;
+}
+
+.card__name {
+    color: var(--TEXT-COLOR);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+.card__adress {
+    color: var(--ALTERNATE-COLOR);
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+.card__description {
+    color: var(--TEXT-COLOR);
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 2em;
+
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    gap: 1em;   
+}
+
+button {
+    background-color: var(--LINK-COLOR);
+    color: var(--TEXT-COLOR);
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 1em;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.social-media ul li button:hover { 
+    background-color: var(--ALTERNATE-COLOR);
+    color: var(--CARD-COLOR);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--TEXT-COLOR);
+}
+
+.attribution {
+    color: var(--ALTERNATE-COLOR);
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+
